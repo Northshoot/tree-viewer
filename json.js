@@ -1,53 +1,47 @@
 export default {
-	timestamp: '14/12/2016 22:00',
-	name: 'Colour',
-	children: [{
-		name: 'Black',
-		children: []
-	}, {
-		name: 'Blue',
-		children: [{
-			name: 'Aquamarine',
-			children: []
-		}, {
-			name: 'Cyan',
-			children: []
-		}, {
-			name: 'Navy',
-			children: []
-		}, {
-			name: 'Turquoise',
-			children: []
-		}]
-	}, {
-		name: 'Green',
-		children: []
-	}, {
-		name: 'Purple',
-		children: [{
-			name: 'Indigo',
-			children: []
-		}, {
-			name: 'Violet',
-			children: []
-		}]
-	}, {
-		name: 'Red',
-		children: [{
-			name: 'Crimson',
-			children: []
-		}, {
-			name: 'Maroon',
-			children: []
-		}, {
-			name: 'Scarlet',
-			children: []
-		}]
-	}, {
-		name: 'White',
-		children: []
-	}, {
-		name: 'Yellow',
-		children: []
-	}]
+    timestamp: '14/12/2016 22:00',
+        name: 'Colour',
+    sortvalue: 'Colour',
+    children: [{
+        name: 'Cyan',
+        sortvalue: "Cyan_1",
+    children: []
+}, {
+    name: 'Blue',
+    sortvalue: 'Blue',
+    children: [{
+        name: 'Aquamarine',
+        sortvalue: 'Aquamarine',
+
+        children: []
+    }, {
+        name: 'Cyan',
+        sortvalue: "Cyan_2",
+        children: []
+    }, {
+        name: 'Navy',
+        sortvalue: 'Navy',
+        children: []
+    }, {
+        name: 'Turquoise',
+        sortvalue: 'Turquoise',
+        children: []
+    }]
+}, {
+    name: 'Green',
+        sortvalue: 'Green',
+    children: []
+}, {
+    name: 'Purple',
+        sortvalue: 'Purple',
+    children: [{
+        name: 'Indigo',
+        sortvalue: 'Indigo',
+        children: []
+    }, {
+        name: 'Violet',
+        sortvalue: 'Violet',
+        children: []
+    }]
+}]
 };

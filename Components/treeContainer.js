@@ -26,7 +26,7 @@ export default class TreeContainer extends React.PureComponent{
 		return false;
 	}
 	buildSubTree(root) {
-		let newChildren = [];		
+		let newChildren = [];
 
 		for (let i = 0; i < root.children.length; i++) {
 			let child = this.buildSubTree(root.children[i]);
@@ -57,13 +57,13 @@ export default class TreeContainer extends React.PureComponent{
 	}
 	render() {
 		let root = this.props.activeNode ? this.getRoot(this.props.data) : this.props.data;
-		
+
 		root = clone(root);
 
 		if (this.props.filter) {
 			root = this.buildSubTree(root) || root;
 		}
-		
+
 		this.setClassName(root);
 
 		return (
@@ -72,6 +72,7 @@ export default class TreeContainer extends React.PureComponent{
 				data={root}
 				height={this.props.height}
 				width={this.props.width}
+				keyProp={'sortvalue'}
 				gProps={{
 					className: 'node',
 					onClick: setActiveNode
